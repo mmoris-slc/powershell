@@ -1,0 +1,7 @@
+Requirements:
+
+must be run on AD domain server
+must be run as admin
+will not work in the PS IDE
+
+results look like. The red error is because the PC either hasn't been on domain in a while (decommissioned) or just hasn't communicated with the domain in a while. 

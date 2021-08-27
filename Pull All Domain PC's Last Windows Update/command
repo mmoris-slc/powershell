@@ -1,0 +1,1 @@
+get-adcomputer -filter 'operatingsystem -like "*"' -properties * | select-object name | sort-object name | foreach-object {get-hotfix -computername $_.name | sort-object date, computername -descending | select-object -first 1}
